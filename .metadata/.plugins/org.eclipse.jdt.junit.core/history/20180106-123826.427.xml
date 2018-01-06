@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runner" project="framework" tests="12" started="12" failures="0" errors="0" ignored="12">
+  <testsuite name="runner.runner" time="0.078">
+    <testsuite name="Feature: Login onto Magento" time="0.078">
+      <testsuite name="Scenario: Happy path scenario" time="0.001" incomplete="true">
+        <skipped/>
+        <testcase name="Given I am a registered user on Magento" classname="Scenario: Happy path scenario" time="0.001" ignored="true"/>
+        <testcase name="When I complete action" classname="Scenario: Happy path scenario" time="0.0" ignored="true"/>
+        <testcase name="And some other action" classname="Scenario: Happy path scenario" time="0.0" ignored="true"/>
+        <testcase name="And yet another action" classname="Scenario: Happy path scenario" time="0.0" ignored="true"/>
+        <testcase name="Then I validate the outcomes" classname="Scenario: Happy path scenario" time="0.0" ignored="true"/>
+        <testcase name="And check more outcomes" classname="Scenario: Happy path scenario" time="0.0" ignored="true"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Title of your scenario outline" time="0.032">
+        <testsuite name="Examples:" time="0.032">
+          <testsuite name="| name1 | 5 | success |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given I want to write a step with name1" classname="| name1 | 5 | success |" time="0.0" ignored="true"/>
+            <testcase name="When I check for the 5 in step" classname="| name1 | 5 | success |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the success in step" classname="| name1 | 5 | success |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| name2 | 7 | Fail |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given I want to write a step with name2" classname="| name2 | 7 | Fail |" time="0.0" ignored="true"/>
+            <testcase name="When I check for the 7 in step" classname="| name2 | 7 | Fail |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the Fail in step" classname="| name2 | 7 | Fail |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

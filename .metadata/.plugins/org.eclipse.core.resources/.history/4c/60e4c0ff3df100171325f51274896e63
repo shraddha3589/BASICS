@@ -1,0 +1,37 @@
+package package1;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class Class1 {
+
+	public static void main(String[] args) throws MalformedURLException {
+		// TODO Auto-generated method stub
+DesiredCapabilities c = new DesiredCapabilities();
+c.setCapability(MobileCapabilityType.DEVICE_NAME, "3450d8409804");
+c.setCapability("platformName", Platform.ANDROID);
+//c.setBrowserName("chrome");
+//to open mobile web app
+c.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+
+c.setCapability("app", "C:\\Users\\User\\Downloads\\Med Helper Pill Reminder_v2.8.6_apkpure.com.apk");
+//to open apk file from desktop99
+
+AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://0.0.0.0:4723/wd/hub"),c);
+//driver.get("http://google.com");
+driver.findElementById("android:id/button3").click();
+
+
+AndroidElement Vitals = driver.findElementByAndroidUIAutomator("Uiselector().text(\"Vitals\")");
+driver.findElementByXPath("android.widget.TextView[@text='Vitals']").click();
+
+}
+}
